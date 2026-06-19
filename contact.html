@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="referrer" content="origin">
+  <meta name="description" content="Contact HexLogic to scope an enterprise penetration test or red team engagement. Senior engineers respond within 24 hours.">
+  <title>Contact | HexLogic</title>
+  <link rel="icon" type="image/png" href="assets/favicon.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;500;600;700&family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <link rel="stylesheet" href="css/hexlogic.css">
+</head>
+<body>
+
+  <nav class="nav">
+    <a class="brand" href="index.html" aria-label="HexLogic home">
+      <img class="brand-mark" src="assets/hexlogic-mark.svg" alt="">
+      <span class="brand-word">HEX<span>LOGIC</span></span>
+    </a>
+    <div class="nav-right">
+      <ul class="nav-links">
+        <li><a href="index.html#services">Services</a></li>
+        <li><a href="index.html#work">Work</a></li>
+        <li><a href="blog.html">Research</a></li>
+        <li><a href="index.html#reports">Reports</a></li>
+        <li><a href="trust.html">Trust</a></li>
+      </ul>
+      <button class="icon-btn" data-theme-toggle title="Toggle theme" aria-label="Toggle theme"><i data-theme-icon class="fas fa-sun"></i></button>
+      <a class="btn btn-secondary btn-sm desktop-cta" href="index.html">Home</a>
+      <button class="icon-btn hamburger" data-menu-toggle aria-label="Menu"><i class="fas fa-bars"></i></button>
+    </div>
+  </nav>
+  <div class="mobile-menu">
+    <a href="index.html#services">Services</a>
+    <a href="index.html#work">Work</a>
+    <a href="blog.html">Research</a>
+    <a href="index.html#reports">Reports</a>
+    <a href="trust.html">Trust</a>
+    <a href="index.html">Home</a>
+  </div>
+
+  <main class="section">
+    <div class="container">
+      <div class="contact-grid" style="display:grid;grid-template-columns:1fr 1fr;gap:clamp(32px,5vw,64px);align-items:start">
+
+        <div>
+          <div class="eyebrow" style="margin-bottom:16px">Secure inquiries</div>
+          <h1 style="font-size:clamp(2.4rem,4.4vw,3.5rem);letter-spacing:-.035em;margin-bottom:18px">Let's scope your<br><span class="grad-text">engagement.</span></h1>
+          <p style="font-size:1.1rem;color:var(--text-muted);margin-bottom:40px;max-width:440px">Ready to secure your infrastructure? Our senior engineers will help you identify and remediate the vulnerabilities that matter most.</p>
+
+          <div style="display:flex;flex-direction:column;gap:22px">
+            <div style="display:flex;align-items:center;gap:16px"><span class="service" style="all:unset"></span>
+              <span class="ic" style="display:inline-grid;place-items:center;width:46px;height:46px;border-radius:var(--r-md);background:var(--accent-soft);border:1px solid var(--border-accent);color:var(--accent);font-size:18px"><i class="fas fa-envelope"></i></span>
+              <div><div style="font-weight:600;color:var(--text-strong)">security@hexlogic.io</div><div class="mono" style="font-size:12px;color:var(--text-faint)">Primary channel</div></div>
+            </div>
+            <div style="display:flex;align-items:center;gap:16px">
+              <span class="ic" style="display:inline-grid;place-items:center;width:46px;height:46px;border-radius:var(--r-md);background:var(--accent-soft);border:1px solid var(--border-accent);color:var(--accent);font-size:18px"><i class="fas fa-shield-halved"></i></span>
+              <div><div style="font-weight:600;color:var(--text-strong)">PGP-encrypted comms</div><div class="mono" style="font-size:12px;color:var(--text-faint)">Available on request</div></div>
+            </div>
+            <div style="display:flex;align-items:center;gap:16px">
+              <span class="ic" style="display:inline-grid;place-items:center;width:46px;height:46px;border-radius:var(--r-md);background:var(--accent-soft);border:1px solid var(--border-accent);color:var(--accent);font-size:18px"><i class="fas fa-clock"></i></span>
+              <div><div style="font-weight:600;color:var(--text-strong)">Response &lt; 24 hours</div><div class="mono" style="font-size:12px;color:var(--text-faint)">Mon–Fri · critical 24/7</div></div>
+            </div>
+          </div>
+        </div>
+
+        <div class="card" style="padding:clamp(28px,4vw,40px)">
+          <form action="https://formsubmit.co/security@hexlogic.io" method="POST" style="display:flex;flex-direction:column;gap:18px">
+            <input type="hidden" name="_next" value="https://hexlogic.io/thanks.html">
+            <input type="hidden" name="_template" value="table">
+            <input type="hidden" name="_captcha" value="false">
+            <input type="hidden" name="_subject" value="New Secure Inquiry - HexLogic Website">
+            <input type="hidden" name="_autoresponse" value="Thanks for reaching out to HexLogic. We've received your message and a senior engineer will respond within 24 hours over your preferred secure channel. — HexLogic Security">
+            <input type="text" name="_honey" style="display:none">
+
+            <div class="field"><label>Full name</label><input type="text" name="name" placeholder="Jane Doe" required></div>
+            <div class="field"><label>Work email</label><div class="wrap"><i class="fas fa-envelope"></i><input class="has-ic" type="email" name="email" placeholder="jane@company.com" required></div></div>
+            <div class="field"><label>Inquiry type</label><input type="text" name="inquiry_type" placeholder="Pentest / Consultation / Other"></div>
+            <div class="field"><label>Message</label><textarea name="message" placeholder="Briefly describe your security needs and scope…" required></textarea></div>
+
+            <label class="modal-note" style="cursor:pointer">
+              <input type="checkbox" name="terms_agreed" required style="width:18px;height:18px;accent-color:var(--accent)">
+              I agree to the <a href="terms.html">Terms of use</a> and <a href="privacy.html">Privacy policy</a>.
+            </label>
+
+            <button class="btn btn-primary btn-lg btn-block" type="submit">Send secure message</button>
+          </form>
+        </div>
+
+      </div>
+    </div>
+  </main>
+
+  <footer class="footer">
+    <div class="footer-grid">
+      <div>
+        <a class="brand" href="index.html" aria-label="HexLogic home">
+          <img class="brand-mark" src="assets/hexlogic-mark.svg" alt="">
+          <span class="brand-word">HEX<span>LOGIC</span></span>
+        </a>
+        <p class="desc">Defending modern enterprises against complex cyber threats through specialized, manual penetration testing and red teaming.</p>
+      </div>
+      <div class="footer-col"><h4>Expertise</h4><ul><li><a href="web-security.html">Web Application</a></li><li><a href="cloud-security.html">Cloud Security</a></li><li><a href="mcp-security.html">MCP Security</a></li><li><a href="ai-security.html">LLM &amp; AI</a></li></ul></div>
+      <div class="footer-col"><h4>Company</h4><ul><li><a href="index.html#work">Case Studies</a></li><li><a href="blog.html">Research</a></li><li><a href="trust.html">Trust Center</a></li><li><a href="contact.html">Contact</a></li></ul></div>
+      <div class="footer-col">
+        <h4>Secure contact</h4>
+        <p style="margin-bottom:8px"><i class="fas fa-envelope" style="margin-right:8px;color:var(--accent)"></i>security@hexlogic.io</p>
+        <p style="margin-bottom:16px"><i class="fas fa-shield-halved" style="margin-right:8px;color:var(--accent)"></i>PGP available</p>
+        <span class="badge badge-success"><span class="dot"></span>Response &lt; 24h</span>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>© <span data-year>2025</span> HexLogic.io — Confidential Security Assessment Firm</span>
+      <div style="display:flex;gap:22px"><a href="privacy.html">Privacy</a><a href="terms.html">Terms</a></div>
+    </div>
+  </footer>
+
+  <script src="js/site.js"></script>
+</body>
+</html>

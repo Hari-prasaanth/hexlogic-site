@@ -1,0 +1,34 @@
+<svg width="64" height="64" viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="HexLogic">
+  <defs>
+    <linearGradient id="hxHex" x1="6" y1="4" x2="58" y2="60" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#5FF4FF"/>
+      <stop offset="1" stop-color="#08AFC4"/>
+    </linearGradient>
+    <linearGradient id="hxTop" x1="19" y1="17" x2="45" y2="33" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#FFC65A"/>
+      <stop offset="1" stop-color="#FFB02E"/>
+    </linearGradient>
+    <linearGradient id="hxLeft" x1="19" y1="26" x2="32" y2="49" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#FF7A3D"/>
+      <stop offset="1" stop-color="#FF6A2C"/>
+    </linearGradient>
+    <linearGradient id="hxRight" x1="45" y1="26" x2="32" y2="49" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#E85A22"/>
+      <stop offset="1" stop-color="#CC4715"/>
+    </linearGradient>
+  </defs>
+  <!-- Hex frame -->
+  <path d="M32 3 L57.12 17.5 L57.12 46.5 L32 61 L6.88 46.5 L6.88 17.5 Z"
+        stroke="url(#hxHex)" stroke-width="2.4" stroke-linejoin="round" fill="none" opacity="0.95"/>
+  <!-- Inner hex hairline -->
+  <path d="M32 11 L50.19 21.5 L50.19 42.5 L32 53 L13.81 42.5 L13.81 21.5 Z"
+        stroke="#08AFC4" stroke-width="0.8" stroke-linejoin="round" fill="none" opacity="0.28"/>
+  <!-- Isometric cube -->
+  <path d="M32 18 L45 25.5 L32 33 L19 25.5 Z" fill="url(#hxTop)"/>
+  <path d="M19 25.5 L32 33 L32 48 L19 40.5 Z" fill="url(#hxLeft)"/>
+  <path d="M45 25.5 L32 33 L32 48 L45 40.5 Z" fill="url(#hxRight)"/>
+  <!-- Top edge highlight -->
+  <path d="M32 18 L45 25.5 L32 33 L19 25.5 Z" stroke="#FFD98A" stroke-width="0.7" fill="none" opacity="0.5" stroke-linejoin="round"/>
+  <!-- Accent node -->
+  <circle cx="32" cy="33" r="1.5" fill="#FFF1D6"/>
+</svg>
