@@ -16,8 +16,55 @@
   <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;500;600;700&family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
   <link rel="stylesheet" href="css/hexlogic.css">
+  <link rel="apple-touch-icon" href="assets/apple-touch-icon.png">
+  <link rel="manifest" href="site.webmanifest">
+  <meta name="theme-color" content="#070A12">
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+        "@type": "Service",
+        "name": "Mobile Application Penetration Testing",
+        "serviceType": "Penetration testing",
+        "provider": {
+          "@type": "Organization",
+          "name": "HexLogic",
+          "url": "https://hexlogic.io/"
+        },
+        "areaServed": "Global",
+        "description": "Static and dynamic analysis and reverse engineering of iOS and Android applications.",
+        "url": "https://hexlogic.io/mobile-security.html"
+      },
+      {
+        "@type": "BreadcrumbList",
+        "itemListElement": [
+          {
+            "@type": "ListItem",
+            "position": 1,
+            "name": "Home",
+            "item": "https://hexlogic.io/"
+          },
+          {
+            "@type": "ListItem",
+            "position": 2,
+            "name": "Services",
+            "item": "https://hexlogic.io/#services"
+          },
+          {
+            "@type": "ListItem",
+            "position": 3,
+            "name": "Mobile Application Penetration Testing",
+            "item": "https://hexlogic.io/mobile-security.html"
+          }
+        ]
+      }
+    ]
+  }
+  </script>
 </head>
 <body>
+  <a class="skip" href="#main">Skip to content</a>
   <nav class="nav">
     <a class="brand" href="index.html" aria-label="HexLogic home">
       <img class="brand-mark" src="assets/hexlogic-mark.svg" alt="">
@@ -28,22 +75,23 @@
         <li><a href="index.html#services">Services</a></li>
         <li><a href="index.html#work">Work</a></li>
         <li><a href="blog.html">Research</a></li>
-        <li><a href="index.html#reports">Reports</a></li>
+        <li><a href="reports.html">Reports</a></li>
         <li><a href="trust.html">Trust</a></li>
       </ul>
-      <button class="icon-btn" data-theme-toggle title="Toggle theme" aria-label="Toggle theme"><i data-theme-icon class="fas fa-sun"></i></button>
+      <button class="icon-btn" data-theme-toggle title="Toggle theme" aria-label="Toggle theme"><i data-theme-icon class="fas fa-sun" aria-hidden="true"></i></button>
       <a class="btn btn-primary btn-sm desktop-cta" href="contact.html">Contact us</a>
-      <button class="icon-btn hamburger" data-menu-toggle aria-label="Menu"><i class="fas fa-bars"></i></button>
+      <button class="icon-btn hamburger" data-menu-toggle aria-label="Menu"><i class="fas fa-bars" aria-hidden="true"></i></button>
     </div>
   </nav>
   <div class="mobile-menu">
     <a href="index.html#services">Services</a>
     <a href="index.html#work">Work</a>
     <a href="blog.html">Research</a>
-    <a href="index.html#reports">Reports</a>
+    <a href="reports.html">Reports</a>
     <a href="trust.html">Trust</a>
     <a href="contact.html">Contact us</a>
   </div>
+  <a id="main" tabindex="-1"></a>
   <header class="page-hero grid-bg">
     <div class="glow"></div>
     <div class="inner reveal in">
@@ -52,7 +100,7 @@
       <h1>Mobile Application Security Testing</h1>
       <p class="lead">Static and dynamic analysis of iOS and Android apps, plus reverse engineering &mdash; uncovering hardcoded secrets, insecure storage and weak transport security.</p>
       <div class="hero-cta" style="margin-top:30px">
-        <a class="btn btn-primary btn-lg" href="contact.html">Request this assessment <i class="fas fa-arrow-right"></i></a>
+        <a class="btn btn-primary btn-lg" href="contact.html">Request this assessment <i class="fas fa-arrow-right" aria-hidden="true"></i></a>
         <a class="btn btn-secondary btn-lg" href="assets/report/mobile.pdf" target="_blank" rel="noopener">View sample report</a>
       </div>
     </div>
@@ -65,12 +113,33 @@
         <p>A focused, manual engagement across the full mobile attack surface.</p>
       </div>
       <div class="feature-list">
-        <div class="feature reveal"><i class="fas fa-box-archive"></i><div><h4>Insecure storage</h4><p>Sensitive data in plaintext, weak keychains and leaky caches.</p></div></div>
-        <div class="feature reveal"><i class="fas fa-magnifying-glass-chart"></i><div><h4>Static analysis</h4><p>Decompilation, hardcoded secrets and dangerous configurations.</p></div></div>
-        <div class="feature reveal"><i class="fas fa-bolt"></i><div><h4>Dynamic analysis</h4><p>Runtime instrumentation, traffic interception and tamper testing.</p></div></div>
-        <div class="feature reveal"><i class="fas fa-lock"></i><div><h4>Transport security</h4><p>Certificate pinning, TLS validation and API exposure.</p></div></div>
-        <div class="feature reveal"><i class="fas fa-fingerprint"></i><div><h4>Auth & biometrics</h4><p>Local auth bypass, jailbreak/root detection weaknesses.</p></div></div>
-        <div class="feature reveal"><i class="fas fa-screwdriver-wrench"></i><div><h4>Reverse engineering</h4><p>Logic recovery, anti-tamper review and IP-protection checks.</p></div></div>
+        <div class="feature reveal"><i class="fas fa-box-archive" aria-hidden="true"></i><div><h4>Insecure storage</h4><p>Sensitive data in plaintext, weak keychains and leaky caches.</p></div></div>
+        <div class="feature reveal"><i class="fas fa-magnifying-glass-chart" aria-hidden="true"></i><div><h4>Static analysis</h4><p>Decompilation, hardcoded secrets and dangerous configurations.</p></div></div>
+        <div class="feature reveal"><i class="fas fa-bolt" aria-hidden="true"></i><div><h4>Dynamic analysis</h4><p>Runtime instrumentation, traffic interception and tamper testing.</p></div></div>
+        <div class="feature reveal"><i class="fas fa-lock" aria-hidden="true"></i><div><h4>Transport security</h4><p>Certificate pinning, TLS validation and API exposure.</p></div></div>
+        <div class="feature reveal"><i class="fas fa-fingerprint" aria-hidden="true"></i><div><h4>Auth & biometrics</h4><p>Local auth bypass, jailbreak/root detection weaknesses.</p></div></div>
+        <div class="feature reveal"><i class="fas fa-screwdriver-wrench" aria-hidden="true"></i><div><h4>Reverse engineering</h4><p>Logic recovery, anti-tamper review and IP-protection checks.</p></div></div>
+      </div>
+    </div>
+  </section>
+  <section class="section">
+    <div class="container">
+      <div class="section-head left reveal" style="max-width:720px">
+        <div class="eyebrow">Coverage</div>
+        <h2>Mapped to the OWASP Mobile Top 10 (2024)</h2>
+        <p>Every finding is categorized against the industry-standard mobile framework, so your risk is legible to engineering, security and leadership alike.</p>
+      </div>
+      <div class="owasp">
+        <div class="owasp-item reveal"><span class="code">M1</span><div><h4>Improper Credential Usage</h4><p>Hardcoded or mishandled credentials and keys.</p></div></div>
+        <div class="owasp-item reveal"><span class="code">M2</span><div><h4>Inadequate Supply Chain Security</h4><p>Risks from third-party SDKs and build pipelines.</p></div></div>
+        <div class="owasp-item reveal"><span class="code">M3</span><div><h4>Insecure Authentication/Authorization</h4><p>Weak local auth and authorization controls.</p></div></div>
+        <div class="owasp-item reveal"><span class="code">M4</span><div><h4>Insufficient Input/Output Validation</h4><p>Unvalidated input and unsafe output handling.</p></div></div>
+        <div class="owasp-item reveal"><span class="code">M5</span><div><h4>Insecure Communication</h4><p>Missing TLS, pinning and certificate validation.</p></div></div>
+        <div class="owasp-item reveal"><span class="code">M6</span><div><h4>Inadequate Privacy Controls</h4><p>Excessive collection and leakage of personal data.</p></div></div>
+        <div class="owasp-item reveal"><span class="code">M7</span><div><h4>Insufficient Binary Protections</h4><p>No obfuscation, anti-tamper or integrity checks.</p></div></div>
+        <div class="owasp-item reveal"><span class="code">M8</span><div><h4>Security Misconfiguration</h4><p>Debuggable, backup-enabled and exported components.</p></div></div>
+        <div class="owasp-item reveal"><span class="code">M9</span><div><h4>Insecure Data Storage</h4><p>Sensitive data stored unencrypted on the device.</p></div></div>
+        <div class="owasp-item reveal"><span class="code">M10</span><div><h4>Insufficient Cryptography</h4><p>Weak algorithms, keys or cryptographic use.</p></div></div>
       </div>
     </div>
   </section>
@@ -97,8 +166,8 @@
           <p>Senior, certified engineers. Fixed-price scope. Report your team can act on.</p>
         </div>
         <div style="display:flex;gap:12px;flex-wrap:wrap">
-          <a class="btn btn-primary btn-lg" href="contact.html">Request an assessment <i class="fas fa-arrow-right"></i></a>
-          <a class="btn btn-secondary btn-lg" href="https://cal.com/hexlogic" target="_blank" rel="noopener"><i class="fas fa-calendar-check"></i> Book a call</a>
+          <a class="btn btn-primary btn-lg" href="contact.html">Request an assessment <i class="fas fa-arrow-right" aria-hidden="true"></i></a>
+          <a class="btn btn-secondary btn-lg" href="https://cal.com/hexlogic" target="_blank" rel="noopener"><i class="fas fa-calendar-check" aria-hidden="true"></i> Book a call</a>
         </div>
       </div>
     </div>
@@ -116,8 +185,8 @@
       <div class="footer-col"><h4>Company</h4><ul><li><a href="index.html#work">Case Studies</a></li><li><a href="blog.html">Research</a></li><li><a href="trust.html">Trust Center</a></li><li><a href="contact.html">Contact</a></li></ul></div>
       <div class="footer-col">
         <h4>Secure contact</h4>
-        <p style="margin-bottom:8px"><i class="fas fa-envelope" style="margin-right:8px;color:var(--accent)"></i>security@hexlogic.io</p>
-        <p style="margin-bottom:16px"><i class="fas fa-shield-halved" style="margin-right:8px;color:var(--accent)"></i>PGP available</p>
+        <p style="margin-bottom:8px"><i class="fas fa-envelope" style="margin-right:8px;color:var(--accent)" aria-hidden="true"></i>security@hexlogic.io</p>
+        <p style="margin-bottom:16px"><i class="fas fa-shield-halved" style="margin-right:8px;color:var(--accent)" aria-hidden="true"></i>PGP available</p>
         <span class="badge badge-success"><span class="dot"></span>Response &lt; 24h</span>
       </div>
     </div>
@@ -127,6 +196,6 @@
     </div>
   </footer>
 
-  <script src="js/site.js"></script>
+  <script src="js/site.js" defer></script>
 </body>
 </html>

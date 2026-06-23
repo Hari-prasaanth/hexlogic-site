@@ -8,16 +8,21 @@
   <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
   <link rel="stylesheet" href="css/hexlogic.css">
+  <link rel="apple-touch-icon" href="assets/apple-touch-icon.png">
+  <link rel="manifest" href="site.webmanifest">
+  <meta name="theme-color" content="#070A12">
 </head>
 <body>
+  <a class="skip" href="#main">Skip to content</a>
   <nav class="nav">
     <a class="brand" href="index.html" aria-label="HexLogic home"><img class="brand-mark" src="assets/hexlogic-mark.svg" alt=""><span class="brand-word">HEX<span>LOGIC</span></span></a>
     <div class="nav-right">
-      <button class="icon-btn" data-theme-toggle title="Toggle theme" aria-label="Toggle theme"><i data-theme-icon class="fas fa-sun"></i></button>
+      <button class="icon-btn" data-theme-toggle title="Toggle theme" aria-label="Toggle theme"><i data-theme-icon class="fas fa-sun" aria-hidden="true"></i></button>
       <a class="btn btn-secondary btn-sm" href="index.html">Home</a>
     </div>
   </nav>
 
+  <a id="main" tabindex="-1"></a>
   <main class="legal">
     <h1>Privacy Policy</h1>
     <div class="updated">Last updated: December 2025</div>
@@ -51,6 +56,6 @@
   </main>
 
   <footer class="footer"><div class="footer-bottom"><span>© <span data-year>2025</span> HexLogic.io — Confidential Security Assessment Firm</span><div style="display:flex;gap:22px"><a href="privacy.html">Privacy</a><a href="terms.html">Terms</a></div></div></footer>
-  <script src="js/site.js"></script>
+  <script src="js/site.js" defer></script>
 </body>
 </html>

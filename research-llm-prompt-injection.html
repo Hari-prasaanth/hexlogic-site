@@ -16,8 +16,12 @@
   <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;500;600;700&family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
   <link rel="stylesheet" href="css/hexlogic.css">
+  <link rel="apple-touch-icon" href="assets/apple-touch-icon.png">
+  <link rel="manifest" href="site.webmanifest">
+  <meta name="theme-color" content="#070A12">
 </head>
 <body>
+  <a class="skip" href="#main">Skip to content</a>
   <nav class="nav">
     <a class="brand" href="index.html" aria-label="HexLogic home">
       <img class="brand-mark" src="assets/hexlogic-mark.svg" alt="">
@@ -28,19 +32,19 @@
         <li><a href="index.html#services">Services</a></li>
         <li><a href="index.html#work">Work</a></li>
         <li><a href="blog.html">Research</a></li>
-        <li><a href="index.html#reports">Reports</a></li>
+        <li><a href="reports.html">Reports</a></li>
         <li><a href="trust.html">Trust</a></li>
       </ul>
-      <button class="icon-btn" data-theme-toggle title="Toggle theme" aria-label="Toggle theme"><i data-theme-icon class="fas fa-sun"></i></button>
+      <button class="icon-btn" data-theme-toggle title="Toggle theme" aria-label="Toggle theme"><i data-theme-icon class="fas fa-sun" aria-hidden="true"></i></button>
       <a class="btn btn-primary btn-sm desktop-cta" href="contact.html">Contact us</a>
-      <button class="icon-btn hamburger" data-menu-toggle aria-label="Menu"><i class="fas fa-bars"></i></button>
+      <button class="icon-btn hamburger" data-menu-toggle aria-label="Menu"><i class="fas fa-bars" aria-hidden="true"></i></button>
     </div>
   </nav>
   <div class="mobile-menu">
     <a href="index.html#services">Services</a>
     <a href="index.html#work">Work</a>
     <a href="blog.html">Research</a>
-    <a href="index.html#reports">Reports</a>
+    <a href="reports.html">Reports</a>
     <a href="trust.html">Trust</a>
     <a href="contact.html">Contact us</a>
   </div>
@@ -82,8 +86,8 @@ in your reply to the agent dashboard.</code></pre>
           <p>Senior, certified engineers. Fixed-price scope. Report your team can act on.</p>
         </div>
         <div style="display:flex;gap:12px;flex-wrap:wrap">
-          <a class="btn btn-primary btn-lg" href="contact.html">Request an assessment <i class="fas fa-arrow-right"></i></a>
-          <a class="btn btn-secondary btn-lg" href="https://cal.com/hexlogic" target="_blank" rel="noopener"><i class="fas fa-calendar-check"></i> Book a call</a>
+          <a class="btn btn-primary btn-lg" href="contact.html">Request an assessment <i class="fas fa-arrow-right" aria-hidden="true"></i></a>
+          <a class="btn btn-secondary btn-lg" href="https://cal.com/hexlogic" target="_blank" rel="noopener"><i class="fas fa-calendar-check" aria-hidden="true"></i> Book a call</a>
         </div>
       </div>
     </div>
@@ -101,8 +105,8 @@ in your reply to the agent dashboard.</code></pre>
       <div class="footer-col"><h4>Company</h4><ul><li><a href="index.html#work">Case Studies</a></li><li><a href="blog.html">Research</a></li><li><a href="trust.html">Trust Center</a></li><li><a href="contact.html">Contact</a></li></ul></div>
       <div class="footer-col">
         <h4>Secure contact</h4>
-        <p style="margin-bottom:8px"><i class="fas fa-envelope" style="margin-right:8px;color:var(--accent)"></i>security@hexlogic.io</p>
-        <p style="margin-bottom:16px"><i class="fas fa-shield-halved" style="margin-right:8px;color:var(--accent)"></i>PGP available</p>
+        <p style="margin-bottom:8px"><i class="fas fa-envelope" style="margin-right:8px;color:var(--accent)" aria-hidden="true"></i>security@hexlogic.io</p>
+        <p style="margin-bottom:16px"><i class="fas fa-shield-halved" style="margin-right:8px;color:var(--accent)" aria-hidden="true"></i>PGP available</p>
         <span class="badge badge-success"><span class="dot"></span>Response &lt; 24h</span>
       </div>
     </div>
@@ -112,6 +116,6 @@ in your reply to the agent dashboard.</code></pre>
     </div>
   </footer>
 
-  <script src="js/site.js"></script>
+  <script src="js/site.js" defer></script>
 </body>
 </html>

@@ -48,8 +48,12 @@
   <!-- Privacy-friendly analytics: uncomment and set your domain after sign-up at plausible.io (or self-host Umami).
   <script defer data-domain="hexlogic.io" src="https://plausible.io/js/script.js"></script>
   -->
+  <link rel="apple-touch-icon" href="assets/apple-touch-icon.png">
+  <link rel="manifest" href="site.webmanifest">
+  <meta name="theme-color" content="#070A12">
 </head>
 <body>
+  <a class="skip" href="#main">Skip to content</a>
 
   <!-- NAV -->
   <nav class="nav">
@@ -62,24 +66,25 @@
         <li><a href="#services">Services</a></li>
         <li><a href="#work">Work</a></li>
         <li><a href="blog.html">Research</a></li>
-        <li><a href="#reports">Reports</a></li>
+        <li><a href="reports.html">Reports</a></li>
         <li><a href="trust.html">Trust</a></li>
       </ul>
-      <button class="icon-btn" data-theme-toggle title="Toggle theme" aria-label="Toggle theme"><i data-theme-icon class="fas fa-sun"></i></button>
+      <button class="icon-btn" data-theme-toggle title="Toggle theme" aria-label="Toggle theme"><i data-theme-icon class="fas fa-sun" aria-hidden="true"></i></button>
       <a class="btn btn-primary btn-sm desktop-cta" data-open-contact href="contact.html">Contact us</a>
-      <button class="icon-btn hamburger" data-menu-toggle aria-label="Menu"><i class="fas fa-bars"></i></button>
+      <button class="icon-btn hamburger" data-menu-toggle aria-label="Menu"><i class="fas fa-bars" aria-hidden="true"></i></button>
     </div>
   </nav>
   <div class="mobile-menu">
     <a href="#services">Services</a>
     <a href="#work">Work</a>
     <a href="blog.html">Research</a>
-    <a href="#reports">Reports</a>
+    <a href="reports.html">Reports</a>
     <a href="trust.html">Trust</a>
     <a href="contact.html">Contact us</a>
   </div>
 
   <!-- HERO -->
+  <a id="main" tabindex="-1"></a>
   <header class="hero grid-bg" id="top">
     <div class="glow"></div>
     <div class="glow-2"></div>
@@ -89,7 +94,7 @@
         <h1>We find the<br>vulnerabilities<br><span class="grad-text">scanners miss.</span></h1>
         <p class="lead">Enterprise penetration testing and red teaming, verified by hand across every layer of the modern stack. Senior, certified engineers — zero false positives, reproducible findings, and remediation your team can act on.</p>
         <div class="hero-cta">
-          <a class="btn btn-primary btn-lg" data-open-contact href="contact.html">Get a security assessment <i class="fas fa-arrow-right"></i></a>
+          <a class="btn btn-primary btn-lg" data-open-contact href="contact.html">Get a security assessment <i class="fas fa-arrow-right" aria-hidden="true"></i></a>
           <a class="btn btn-secondary btn-lg" href="#reports">View sample report</a>
         </div>
         <div class="hero-certs">
@@ -156,42 +161,42 @@
       </div>
       <div class="grid-auto">
         <a class="card card-interactive service reveal" href="web-security.html">
-          <span class="ic"><i class="fas fa-globe"></i></span><h3>Web Application</h3>
+          <span class="ic"><i class="fas fa-globe" aria-hidden="true"></i></span><h3>Web Application</h3>
           <p>Manual testing for business-logic flaws, IDOR, injection and broken access control.</p>
           <div class="tags"><span>OWASP</span><span>Burp Suite</span></div>
         </a>
         <a class="card card-interactive service reveal" data-d="1" href="network-security.html">
-          <span class="ic"><i class="fas fa-network-wired"></i></span><h3>Network</h3>
+          <span class="ic"><i class="fas fa-network-wired" aria-hidden="true"></i></span><h3>Network</h3>
           <p>Internal &amp; external assessment, Active Directory exploitation and lateral movement.</p>
           <div class="tags"><span>Active Directory</span><span>Pivoting</span></div>
         </a>
         <a class="card card-interactive service reveal" data-d="2" href="api-security.html">
-          <span class="ic"><i class="fas fa-diagram-project"></i></span><h3>API</h3>
+          <span class="ic"><i class="fas fa-diagram-project" aria-hidden="true"></i></span><h3>API</h3>
           <p>Deep dives into REST, SOAP &amp; GraphQL — detecting BOLA, mass assignment and data leaks.</p>
           <div class="tags"><span>REST</span><span>GraphQL</span></div>
         </a>
         <a class="card card-interactive service reveal" data-d="3" href="mobile-security.html">
-          <span class="ic"><i class="fas fa-mobile-screen-button"></i></span><h3>Mobile</h3>
+          <span class="ic"><i class="fas fa-mobile-screen-button" aria-hidden="true"></i></span><h3>Mobile</h3>
           <p>Static &amp; dynamic analysis for iOS and Android. Reversing for hardcoded secrets and weak storage.</p>
           <div class="tags"><span>iOS</span><span>Android</span></div>
         </a>
         <a class="card card-interactive service reveal" href="iot-security.html">
-          <span class="ic"><i class="fas fa-microchip"></i></span><h3>IoT &amp; Embedded</h3>
+          <span class="ic"><i class="fas fa-microchip" aria-hidden="true"></i></span><h3>IoT &amp; Embedded</h3>
           <p>Firmware extraction, hardware interfaces and radio protocols — from the chip to the cloud.</p>
           <div class="tags"><span>Firmware</span><span>BLE / RF</span></div>
         </a>
         <a class="card card-interactive service reveal" data-d="1" href="cloud-security.html">
-          <span class="ic"><i class="fas fa-cloud"></i></span><h3>Cloud</h3>
+          <span class="ic"><i class="fas fa-cloud" aria-hidden="true"></i></span><h3>Cloud</h3>
           <p>AWS, Azure &amp; GCP configuration review — IAM, exposed storage and serverless risk.</p>
           <div class="tags"><span>AWS</span><span>Azure</span><span>GCP</span></div>
         </a>
         <a class="card card-interactive service reveal" data-d="2" href="mcp-security.html">
-          <span class="ic"><i class="fas fa-plug-circle-bolt"></i></span><h3>MCP</h3>
+          <span class="ic"><i class="fas fa-plug-circle-bolt" aria-hidden="true"></i></span><h3>MCP</h3>
           <p>Model Context Protocol servers — tool poisoning, prompt-relay abuse and broken server auth.</p>
           <div class="tags"><span>Tool Poisoning</span><span>Server Auth</span></div>
         </a>
         <a class="card card-interactive service reveal" data-d="3" href="ai-security.html">
-          <span class="ic"><i class="fas fa-brain"></i></span><h3>LLM &amp; AI</h3>
+          <span class="ic"><i class="fas fa-brain" aria-hidden="true"></i></span><h3>LLM &amp; AI</h3>
           <p>Red teaming for prompt injection, jailbreaks, data exfiltration and unsafe agent actions.</p>
           <div class="tags"><span>Prompt Injection</span><span>OWASP LLM</span></div>
         </a>
@@ -208,9 +213,9 @@
         <p>Built for modern development teams — every step is documented, evidenced and re-verified.</p>
       </div>
       <div class="steps">
-        <div class="card step reveal"><div class="n">01</div><h3>Scope</h3><p>Define rules of engagement, critical assets and success criteria with your team.</p><div class="arrow"><i class="fas fa-chevron-right"></i></div></div>
-        <div class="card step reveal" data-d="1"><div class="n">02</div><h3>Attack</h3><p>Manual exploitation focused on logic flaws and realistic, chained attack paths.</p><div class="arrow"><i class="fas fa-chevron-right"></i></div></div>
-        <div class="card step reveal" data-d="2"><div class="n">03</div><h3>Report</h3><p>Prioritized findings with reproduction steps, evidence and remediation guidance.</p><div class="arrow"><i class="fas fa-chevron-right"></i></div></div>
+        <div class="card step reveal"><div class="n">01</div><h3>Scope</h3><p>Define rules of engagement, critical assets and success criteria with your team.</p><div class="arrow"><i class="fas fa-chevron-right" aria-hidden="true"></i></div></div>
+        <div class="card step reveal" data-d="1"><div class="n">02</div><h3>Attack</h3><p>Manual exploitation focused on logic flaws and realistic, chained attack paths.</p><div class="arrow"><i class="fas fa-chevron-right" aria-hidden="true"></i></div></div>
+        <div class="card step reveal" data-d="2"><div class="n">03</div><h3>Report</h3><p>Prioritized findings with reproduction steps, evidence and remediation guidance.</p><div class="arrow"><i class="fas fa-chevron-right" aria-hidden="true"></i></div></div>
         <div class="card step reveal" data-d="3"><div class="n">04</div><h3>Re-test</h3><p>We verify your fixes so vulnerabilities are closed — not just reported.</p></div>
       </div>
     </div>
@@ -229,19 +234,19 @@
           <div class="case-top"><span class="sector">FinTech · Web + API</span><span class="badge badge-success"><span class="dot"></span>Pre-launch</span></div>
           <div class="metric">2<small>Criticals caught before launch</small></div>
           <p>Manual testing of a new payments platform uncovered an authentication bypass and an IDOR exposing other tenants' accounts — both missed by prior automated scans.</p>
-          <div class="outcome"><i class="fas fa-circle-check"></i> Shipped on schedule · zero post-launch incidents</div>
+          <div class="outcome"><i class="fas fa-circle-check" aria-hidden="true"></i> Shipped on schedule · zero post-launch incidents</div>
         </div>
         <div class="card case reveal" data-d="1">
           <div class="case-top"><span class="sector">SaaS · LLM / Agent</span><span class="badge badge-success"><span class="dot"></span>Re-tested</span></div>
           <div class="metric">11<small>AI red-team findings</small></div>
           <p>An indirect prompt-injection chain in a customer-support agent allowed data exfiltration and unauthorized tool calls. We mapped each issue to the OWASP LLM Top 10.</p>
-          <div class="outcome"><i class="fas fa-circle-check"></i> Guardrails rebuilt · passed verification re-test</div>
+          <div class="outcome"><i class="fas fa-circle-check" aria-hidden="true"></i> Guardrails rebuilt · passed verification re-test</div>
         </div>
         <div class="card case reveal" data-d="2">
           <div class="case-top"><span class="sector">Healthcare · Network</span><span class="badge badge-success"><span class="dot"></span>Red team</span></div>
           <div class="metric">6h<small>To domain admin</small></div>
           <p>An assumed-breach internal engagement reached full Active Directory compromise through chained misconfigurations and lateral movement, with every step evidenced.</p>
-          <div class="outcome"><i class="fas fa-circle-check"></i> Tiering &amp; segmentation rolled out org-wide</div>
+          <div class="outcome"><i class="fas fa-circle-check" aria-hidden="true"></i> Tiering &amp; segmentation rolled out org-wide</div>
         </div>
       </div>
     </div>
@@ -257,21 +262,21 @@
       </div>
       <div class="team">
         <div class="card member reveal">
-          <div class="avatar"><i class="fas fa-user-secret"></i></div>
+          <div class="avatar"><i class="fas fa-user-secret" aria-hidden="true"></i></div>
           <h3>Principal Offensive Engineer</h3>
           <div class="role">Web · Network · Active Directory</div>
           <p>12+ years leading complex web, network and red-team engagements for regulated enterprises.</p>
           <div class="certs"><span class="badge mono">OSCP</span><span class="badge mono">OSEP</span><span class="badge mono">OSWP</span></div>
         </div>
         <div class="card member reveal" data-d="1">
-          <div class="avatar"><i class="fas fa-cloud-bolt"></i></div>
+          <div class="avatar"><i class="fas fa-cloud-bolt" aria-hidden="true"></i></div>
           <h3>Cloud &amp; AI Security Lead</h3>
           <div class="role">Cloud · MCP · LLM red team</div>
           <p>Specializes in multi-cloud configuration review and adversarial testing of LLM and agentic systems.</p>
           <div class="certs"><span class="badge mono">AWS</span><span class="badge mono">Azure</span><span class="badge mono">OSCP</span></div>
         </div>
         <div class="card member reveal" data-d="2">
-          <div class="avatar"><i class="fas fa-microchip"></i></div>
+          <div class="avatar"><i class="fas fa-microchip" aria-hidden="true"></i></div>
           <h3>Senior Mobile &amp; IoT Researcher</h3>
           <div class="role">Mobile · Firmware · Reversing</div>
           <p>Reverse engineering of mobile apps and embedded firmware — from hardcoded secrets to radio protocols.</p>
@@ -279,15 +284,15 @@
         </div>
       </div>
       <div class="cert-grid reveal">
-        <span class="cert-chip"><i class="fas fa-certificate"></i>OSCP</span>
-        <span class="cert-chip"><i class="fas fa-certificate"></i>OSEP</span>
-        <span class="cert-chip"><i class="fas fa-certificate"></i>OSWP</span>
-        <span class="cert-chip"><i class="fas fa-certificate"></i>CRTO</span>
-        <span class="cert-chip"><i class="fas fa-certificate"></i>KLCP</span>
-        <span class="cert-chip"><i class="fas fa-certificate"></i>AWS Security</span>
-        <span class="cert-chip"><i class="fas fa-certificate"></i>Azure Security</span>
-        <span class="cert-chip"><i class="fas fa-certificate"></i>GCP Security</span>
-        <span class="cert-chip"><i class="fas fa-certificate"></i>CISSP</span>
+        <span class="cert-chip"><i class="fas fa-certificate" aria-hidden="true"></i>OSCP</span>
+        <span class="cert-chip"><i class="fas fa-certificate" aria-hidden="true"></i>OSEP</span>
+        <span class="cert-chip"><i class="fas fa-certificate" aria-hidden="true"></i>OSWP</span>
+        <span class="cert-chip"><i class="fas fa-certificate" aria-hidden="true"></i>CRTO</span>
+        <span class="cert-chip"><i class="fas fa-certificate" aria-hidden="true"></i>KLCP</span>
+        <span class="cert-chip"><i class="fas fa-certificate" aria-hidden="true"></i>AWS Security</span>
+        <span class="cert-chip"><i class="fas fa-certificate" aria-hidden="true"></i>Azure Security</span>
+        <span class="cert-chip"><i class="fas fa-certificate" aria-hidden="true"></i>GCP Security</span>
+        <span class="cert-chip"><i class="fas fa-certificate" aria-hidden="true"></i>CISSP</span>
       </div>
     </div>
   </section>
@@ -303,59 +308,59 @@
       <div class="reports">
 
         <a class="card card-interactive report reveal" href="assets/report/web.pdf" target="_blank" rel="noopener">
-          <div class="report-top"><span class="ic"><i class="fas fa-globe"></i></span>
+          <div class="report-top"><span class="ic"><i class="fas fa-globe" aria-hidden="true"></i></span>
             <div><div class="t">Web Application</div><div class="m">Sanitized · PDF</div></div></div>
           <div class="tags"><span>OWASP</span><span>Logic flaws</span></div>
-          <div class="report-foot"><span class="status ready">● Sample available</span><span class="go">Open <i class="fas fa-arrow-up-right-from-square"></i></span></div>
+          <div class="report-foot"><span class="status ready">● Sample available</span><span class="go">Open <i class="fas fa-arrow-up-right-from-square" aria-hidden="true"></i></span></div>
         </a>
 
         <a class="card card-interactive report reveal" data-d="1" href="assets/report/network.pdf" target="_blank" rel="noopener">
-          <div class="report-top"><span class="ic"><i class="fas fa-network-wired"></i></span>
+          <div class="report-top"><span class="ic"><i class="fas fa-network-wired" aria-hidden="true"></i></span>
             <div><div class="t">Network</div><div class="m">Internal / External</div></div></div>
           <div class="tags"><span>Active Directory</span><span>Lateral movement</span></div>
-          <div class="report-foot"><span class="status ready">● Sample available</span><span class="go">Open <i class="fas fa-arrow-up-right-from-square"></i></span></div>
+          <div class="report-foot"><span class="status ready">● Sample available</span><span class="go">Open <i class="fas fa-arrow-up-right-from-square" aria-hidden="true"></i></span></div>
         </a>
 
         <a class="card card-interactive report reveal" data-d="2" href="assets/report/api.pdf" target="_blank" rel="noopener">
-          <div class="report-top"><span class="ic"><i class="fas fa-diagram-project"></i></span>
+          <div class="report-top"><span class="ic"><i class="fas fa-diagram-project" aria-hidden="true"></i></span>
             <div><div class="t">API</div><div class="m">REST / GraphQL</div></div></div>
           <div class="tags"><span>BOLA</span><span>Data leaks</span></div>
-          <div class="report-foot"><span class="status ready">● Sample available</span><span class="go">Open <i class="fas fa-arrow-up-right-from-square"></i></span></div>
+          <div class="report-foot"><span class="status ready">● Sample available</span><span class="go">Open <i class="fas fa-arrow-up-right-from-square" aria-hidden="true"></i></span></div>
         </a>
 
         <a class="card card-interactive report reveal" data-d="3" href="assets/report/mobile.pdf" target="_blank" rel="noopener">
-          <div class="report-top"><span class="ic"><i class="fas fa-mobile-screen-button"></i></span>
+          <div class="report-top"><span class="ic"><i class="fas fa-mobile-screen-button" aria-hidden="true"></i></span>
             <div><div class="t">Mobile</div><div class="m">iOS &amp; Android</div></div></div>
           <div class="tags"><span>SAST</span><span>DAST</span></div>
-          <div class="report-foot"><span class="status ready">● Sample available</span><span class="go">Open <i class="fas fa-arrow-up-right-from-square"></i></span></div>
+          <div class="report-foot"><span class="status ready">● Sample available</span><span class="go">Open <i class="fas fa-arrow-up-right-from-square" aria-hidden="true"></i></span></div>
         </a>
 
         <a class="card card-interactive report reveal" href="assets/report/iot.pdf" target="_blank" rel="noopener">
-          <div class="report-top"><span class="ic"><i class="fas fa-microchip"></i></span>
+          <div class="report-top"><span class="ic"><i class="fas fa-microchip" aria-hidden="true"></i></span>
             <div><div class="t">IoT &amp; Embedded</div><div class="m">Firmware / Hardware</div></div></div>
           <div class="tags"><span>Firmware</span><span>BLE / RF</span></div>
-          <div class="report-foot"><span class="status ready">● Sample available</span><span class="go">Open <i class="fas fa-arrow-up-right-from-square"></i></span></div>
+          <div class="report-foot"><span class="status ready">● Sample available</span><span class="go">Open <i class="fas fa-arrow-up-right-from-square" aria-hidden="true"></i></span></div>
         </a>
 
         <a class="card card-interactive report reveal" data-d="1" href="assets/report/cloud.pdf" target="_blank" rel="noopener">
-          <div class="report-top"><span class="ic"><i class="fas fa-cloud"></i></span>
+          <div class="report-top"><span class="ic"><i class="fas fa-cloud" aria-hidden="true"></i></span>
             <div><div class="t">Cloud</div><div class="m">AWS · Azure · GCP</div></div></div>
           <div class="tags"><span>IAM</span><span>Serverless</span></div>
-          <div class="report-foot"><span class="status ready">● Sample available</span><span class="go">Open <i class="fas fa-arrow-up-right-from-square"></i></span></div>
+          <div class="report-foot"><span class="status ready">● Sample available</span><span class="go">Open <i class="fas fa-arrow-up-right-from-square" aria-hidden="true"></i></span></div>
         </a>
 
         <a class="card card-interactive report reveal" data-d="2" href="assets/report/mcp.pdf" target="_blank" rel="noopener">
-          <div class="report-top"><span class="ic"><i class="fas fa-plug-circle-bolt"></i></span>
+          <div class="report-top"><span class="ic"><i class="fas fa-plug-circle-bolt" aria-hidden="true"></i></span>
             <div><div class="t">MCP</div><div class="m">Model Context Protocol</div></div></div>
           <div class="tags"><span>Tool poisoning</span><span>Server auth</span></div>
-          <div class="report-foot"><span class="status ready">● Sample available</span><span class="go">Open <i class="fas fa-arrow-up-right-from-square"></i></span></div>
+          <div class="report-foot"><span class="status ready">● Sample available</span><span class="go">Open <i class="fas fa-arrow-up-right-from-square" aria-hidden="true"></i></span></div>
         </a>
 
         <a class="card card-interactive report reveal" data-d="3" href="assets/report/llm.pdf" target="_blank" rel="noopener">
-          <div class="report-top"><span class="ic"><i class="fas fa-brain"></i></span>
+          <div class="report-top"><span class="ic"><i class="fas fa-brain" aria-hidden="true"></i></span>
             <div><div class="t">LLM &amp; AI</div><div class="m">Model / Agent red team</div></div></div>
           <div class="tags"><span>Prompt injection</span><span>Jailbreaks</span></div>
-          <div class="report-foot"><span class="status ready">● Sample available</span><span class="go">Open <i class="fas fa-arrow-up-right-from-square"></i></span></div>
+          <div class="report-foot"><span class="status ready">● Sample available</span><span class="go">Open <i class="fas fa-arrow-up-right-from-square" aria-hidden="true"></i></span></div>
         </a>
 
       </div>
@@ -372,27 +377,27 @@
       </div>
       <div class="faq reveal">
         <details>
-          <summary>How long does an engagement take? <i class="fas fa-plus"></i></summary>
+          <summary>How long does an engagement take? <i class="fas fa-plus" aria-hidden="true"></i></summary>
           <div class="ans">Most focused assessments run one to three weeks depending on scope and surface. We agree a timeline during scoping and keep you updated throughout — critical findings are reported the moment they're confirmed, not held until the end.</div>
         </details>
         <details>
-          <summary>How do you price? <i class="fas fa-plus"></i></summary>
+          <summary>How do you price? <i class="fas fa-plus" aria-hidden="true"></i></summary>
           <div class="ans">Engagements are fixed-price, scoped to your assets and objectives — no hourly surprises. We'll provide a clear quote after a short scoping conversation under NDA.</div>
         </details>
         <details>
-          <summary>Will testing disrupt our production systems? <i class="fas fa-plus"></i></summary>
+          <summary>Will testing disrupt our production systems? <i class="fas fa-plus" aria-hidden="true"></i></summary>
           <div class="ans">No. We agree rules of engagement before starting, work within defined windows, and favor non-destructive techniques. Where staging environments exist, we use them for higher-risk testing.</div>
         </details>
         <details>
-          <summary>Do you re-test our fixes? <i class="fas fa-plus"></i></summary>
+          <summary>Do you re-test our fixes? <i class="fas fa-plus" aria-hidden="true"></i></summary>
           <div class="ans">Yes — verification re-testing is included. Once your team remediates, we confirm each issue is actually closed and update the report so you have evidence for auditors and customers.</div>
         </details>
         <details>
-          <summary>What do we actually receive? <i class="fas fa-plus"></i></summary>
+          <summary>What do we actually receive? <i class="fas fa-plus" aria-hidden="true"></i></summary>
           <div class="ans">A prioritized report with reproduction steps, evidence, business impact and remediation guidance your developers can act on, plus an executive summary. Sample reports are available for every domain we cover.</div>
         </details>
         <details>
-          <summary>Is everything confidential? <i class="fas fa-plus"></i></summary>
+          <summary>Is everything confidential? <i class="fas fa-plus" aria-hidden="true"></i></summary>
           <div class="ans">Always. All engagements run under NDA, communications can be PGP-encrypted, and findings are handled per our responsible-disclosure and data-handling policies in the Trust Center.</div>
         </details>
       </div>
@@ -409,8 +414,8 @@
           <h2>Find your critical risks before an adversary does.</h2>
           <p>Senior engineers, certified expertise, and a report your developers will actually use. All engagements under NDA.</p>
           <div class="row">
-            <a class="btn btn-primary btn-lg" data-open-contact href="contact.html">Request an assessment <i class="fas fa-arrow-right"></i></a>
-            <a class="btn btn-secondary btn-lg" href="https://cal.com/hexlogic" target="_blank" rel="noopener"><i class="fas fa-calendar-check"></i> Book a scoping call</a>
+            <a class="btn btn-primary btn-lg" data-open-contact href="contact.html">Request an assessment <i class="fas fa-arrow-right" aria-hidden="true"></i></a>
+            <a class="btn btn-secondary btn-lg" href="https://cal.com/hexlogic" target="_blank" rel="noopener"><i class="fas fa-calendar-check" aria-hidden="true"></i> Book a scoping call</a>
             <a class="btn btn-ghost btn-lg" href="mailto:security@hexlogic.io">security@hexlogic.io</a>
           </div>
         </div>
@@ -432,8 +437,8 @@
       <div class="footer-col"><h4>Company</h4><ul><li><a href="#work">Case Studies</a></li><li><a href="blog.html">Research</a></li><li><a href="trust.html">Trust Center</a></li><li><a href="contact.html">Contact</a></li></ul></div>
       <div class="footer-col">
         <h4>Secure contact</h4>
-        <p style="margin-bottom:8px"><i class="fas fa-envelope" style="margin-right:8px;color:var(--accent)"></i>security@hexlogic.io</p>
-        <p style="margin-bottom:16px"><i class="fas fa-shield-halved" style="margin-right:8px;color:var(--accent)"></i>PGP available</p>
+        <p style="margin-bottom:8px"><i class="fas fa-envelope" style="margin-right:8px;color:var(--accent)" aria-hidden="true"></i>security@hexlogic.io</p>
+        <p style="margin-bottom:16px"><i class="fas fa-shield-halved" style="margin-right:8px;color:var(--accent)" aria-hidden="true"></i>PGP available</p>
         <span class="badge badge-success"><span class="dot"></span>Response &lt; 24h</span>
       </div>
     </div>
@@ -448,7 +453,7 @@
     <div class="modal">
       <div class="modal-head">
         <div class="id"><img src="assets/hexlogic-mark.svg" alt=""><span class="t" data-modal-title>Request an assessment</span></div>
-        <button class="modal-close" data-close-modal aria-label="Close"><i class="fas fa-xmark"></i></button>
+        <button class="modal-close" data-close-modal aria-label="Close"><i class="fas fa-xmark" aria-hidden="true"></i></button>
       </div>
       <form class="modal-body" data-modal-form action="https://formsubmit.co/ajax/security@hexlogic.io" method="POST">
         <input type="hidden" name="_subject" value="New report / assessment request — HexLogic.io">
@@ -457,14 +462,14 @@
         <input type="hidden" name="_autoresponse" value="Thanks for reaching out to HexLogic. We've received your request and a senior engineer will respond within 24 hours over your preferred secure channel. — HexLogic Security">
         <input type="hidden" name="report" value="General inquiry">
         <input type="text" name="_honey" style="display:none">
-        <div class="field"><label>Work email</label><div class="wrap"><i class="fas fa-envelope"></i><input class="has-ic" type="email" name="email" placeholder="you@company.com" required></div></div>
+        <div class="field"><label>Work email</label><div class="wrap"><i class="fas fa-envelope" aria-hidden="true"></i><input class="has-ic" type="email" name="email" placeholder="you@company.com" required></div></div>
         <div class="field"><label>Company</label><input type="text" name="company" placeholder="Acme Corp" required></div>
         <div class="field"><label>Scope</label><input type="text" name="scope" placeholder="Web · API · Cloud · LLM / MCP…"></div>
-        <div class="modal-note"><i class="fas fa-lock"></i> Encrypted in transit · NDA on request</div>
+        <div class="modal-note"><i class="fas fa-lock" aria-hidden="true"></i> Encrypted in transit · NDA on request</div>
         <button class="btn btn-primary btn-lg btn-block" type="submit">Send secure message</button>
       </form>
       <div class="modal-success" data-modal-success style="display:none">
-        <div class="check"><i class="fas fa-check"></i></div>
+        <div class="check"><i class="fas fa-check" aria-hidden="true"></i></div>
         <h3>Message received</h3>
         <p>A senior engineer will respond within 24 hours over your preferred secure channel.</p>
         <button class="btn btn-secondary" data-close-modal>Close</button>
@@ -472,6 +477,6 @@
     </div>
   </div>
 
-  <script src="js/site.js"></script>
+  <script src="js/site.js" defer></script>
 </body>
 </html>

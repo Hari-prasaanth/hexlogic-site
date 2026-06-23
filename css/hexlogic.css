@@ -535,3 +535,9 @@ a:hover{color:var(--accent-hover);}
   padding:clamp(28px,4vw,44px);border:1px solid var(--border-default);border-radius:var(--r-xl);background:var(--surface-inset);}
 .cta-slim h3{font-size:clamp(1.3rem,2vw,1.7rem);letter-spacing:-.02em;margin:0;}
 .cta-slim p{font-size:14.5px;color:var(--text-muted);margin:6px 0 0;}
+
+/* ---------- Skip-to-content (accessibility) ---------- */
+.skip{position:absolute;left:-9999px;top:0;z-index:3000;background:var(--accent);color:var(--text-on-accent);
+  padding:11px 18px;border-radius:0 0 var(--r-sm) 0;font-weight:600;font-size:14px;text-decoration:none;}
+.skip:focus{left:0;outline:none;box-shadow:var(--focus-ring);}
+[id="main"]:focus{outline:none;}

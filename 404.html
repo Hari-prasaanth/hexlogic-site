@@ -8,16 +8,21 @@
   <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
   <link rel="stylesheet" href="css/hexlogic.css">
+  <link rel="apple-touch-icon" href="assets/apple-touch-icon.png">
+  <link rel="manifest" href="site.webmanifest">
+  <meta name="theme-color" content="#070A12">
 </head>
 <body>
+  <a class="skip" href="#main">Skip to content</a>
   <nav class="nav">
     <a class="brand" href="index.html" aria-label="HexLogic home"><img class="brand-mark" src="assets/hexlogic-mark.svg" alt=""><span class="brand-word">HEX<span>LOGIC</span></span></a>
     <div class="nav-right">
-      <button class="icon-btn" data-theme-toggle title="Toggle theme" aria-label="Toggle theme"><i data-theme-icon class="fas fa-sun"></i></button>
+      <button class="icon-btn" data-theme-toggle title="Toggle theme" aria-label="Toggle theme"><i data-theme-icon class="fas fa-sun" aria-hidden="true"></i></button>
       <a class="btn btn-secondary btn-sm" href="index.html">Home</a>
     </div>
   </nav>
 
+  <a id="main" tabindex="-1"></a>
   <main class="hero grid-bg" style="min-height:calc(100vh - 72px);display:grid;place-items:center;text-align:center">
     <div class="glow"></div>
     <div style="position:relative;max-width:560px;padding:40px 24px">
@@ -25,10 +30,10 @@
       <div class="eyebrow" style="margin:8px 0 16px;justify-content:center">Endpoint not found</div>
       <h1 style="font-size:clamp(1.8rem,3.4vw,2.6rem);letter-spacing:-.03em;margin-bottom:18px">This route returned nothing.</h1>
       <p style="font-size:1.1rem;color:var(--text-muted);margin-bottom:34px">The page you're looking for has moved or never existed. Let's get you back to safe ground.</p>
-      <a class="btn btn-primary btn-lg" href="index.html">Back to home <i class="fas fa-arrow-right" style="font-size:13px"></i></a>
+      <a class="btn btn-primary btn-lg" href="index.html">Back to home <i class="fas fa-arrow-right" style="font-size:13px" aria-hidden="true"></i></a>
     </div>
   </main>
 
-  <script src="js/site.js"></script>
+  <script src="js/site.js" defer></script>
 </body>
 </html>

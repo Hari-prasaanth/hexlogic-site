@@ -8,27 +8,32 @@
   <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
   <link rel="stylesheet" href="css/hexlogic.css">
+  <link rel="apple-touch-icon" href="assets/apple-touch-icon.png">
+  <link rel="manifest" href="site.webmanifest">
+  <meta name="theme-color" content="#070A12">
 </head>
 <body>
+  <a class="skip" href="#main">Skip to content</a>
   <nav class="nav">
     <a class="brand" href="index.html" aria-label="HexLogic home"><img class="brand-mark" src="assets/hexlogic-mark.svg" alt=""><span class="brand-word">HEX<span>LOGIC</span></span></a>
     <div class="nav-right">
-      <button class="icon-btn" data-theme-toggle title="Toggle theme" aria-label="Toggle theme"><i data-theme-icon class="fas fa-sun"></i></button>
+      <button class="icon-btn" data-theme-toggle title="Toggle theme" aria-label="Toggle theme"><i data-theme-icon class="fas fa-sun" aria-hidden="true"></i></button>
       <a class="btn btn-secondary btn-sm" href="index.html">Home</a>
     </div>
   </nav>
 
+  <a id="main" tabindex="-1"></a>
   <main class="hero grid-bg" style="min-height:calc(100vh - 72px);display:grid;place-items:center;text-align:center">
     <div class="glow"></div>
     <div style="position:relative;max-width:560px;padding:40px 24px">
-      <div class="check" style="width:72px;height:72px;border-radius:50%;margin:0 auto 28px;display:grid;place-items:center;background:rgba(47,217,138,.14);color:var(--status-success);font-size:30px"><i class="fas fa-check"></i></div>
+      <div class="check" style="width:72px;height:72px;border-radius:50%;margin:0 auto 28px;display:grid;place-items:center;background:rgba(47,217,138,.14);color:var(--status-success);font-size:30px"><i class="fas fa-check" aria-hidden="true"></i></div>
       <div class="eyebrow" style="margin-bottom:16px;justify-content:center">Transmission secure</div>
       <h1 style="font-size:clamp(2.2rem,4vw,3.2rem);letter-spacing:-.035em;margin-bottom:18px">Message received.</h1>
       <p style="font-size:1.15rem;color:var(--text-muted);margin-bottom:34px">Thank you for reaching out. A senior engineer will respond within 24 hours over your preferred secure channel.</p>
-      <a class="btn btn-primary btn-lg" href="index.html">Back to home <i class="fas fa-arrow-right" style="font-size:13px"></i></a>
+      <a class="btn btn-primary btn-lg" href="index.html">Back to home <i class="fas fa-arrow-right" style="font-size:13px" aria-hidden="true"></i></a>
     </div>
   </main>
 
-  <script src="js/site.js"></script>
+  <script src="js/site.js" defer></script>
 </body>
 </html>

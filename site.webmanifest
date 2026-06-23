@@ -1,0 +1,14 @@
+{
+  "name": "HexLogic — Enterprise Offensive Security",
+  "short_name": "HexLogic",
+  "description": "Enterprise offensive security: penetration testing and red teaming across web, network, API, mobile, IoT, cloud, MCP and LLM.",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#070A12",
+  "theme_color": "#070A12",
+  "icons": [
+    { "src": "assets/favicon.png", "sizes": "128x128", "type": "image/png" },
+    { "src": "assets/apple-touch-icon.png", "sizes": "180x180", "type": "image/png" },
+    { "src": "assets/icon-512.png", "sizes": "512x512", "type": "image/png", "purpose": "any maskable" }
+  ]
+}

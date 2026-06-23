@@ -16,8 +16,55 @@
   <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;500;600;700&family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
   <link rel="stylesheet" href="css/hexlogic.css">
+  <link rel="apple-touch-icon" href="assets/apple-touch-icon.png">
+  <link rel="manifest" href="site.webmanifest">
+  <meta name="theme-color" content="#070A12">
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+        "@type": "Service",
+        "name": "Network Penetration Testing",
+        "serviceType": "Penetration testing",
+        "provider": {
+          "@type": "Organization",
+          "name": "HexLogic",
+          "url": "https://hexlogic.io/"
+        },
+        "areaServed": "Global",
+        "description": "Internal and external network and Active Directory penetration testing and assumed-breach red teaming.",
+        "url": "https://hexlogic.io/network-security.html"
+      },
+      {
+        "@type": "BreadcrumbList",
+        "itemListElement": [
+          {
+            "@type": "ListItem",
+            "position": 1,
+            "name": "Home",
+            "item": "https://hexlogic.io/"
+          },
+          {
+            "@type": "ListItem",
+            "position": 2,
+            "name": "Services",
+            "item": "https://hexlogic.io/#services"
+          },
+          {
+            "@type": "ListItem",
+            "position": 3,
+            "name": "Network Penetration Testing",
+            "item": "https://hexlogic.io/network-security.html"
+          }
+        ]
+      }
+    ]
+  }
+  </script>
 </head>
 <body>
+  <a class="skip" href="#main">Skip to content</a>
   <nav class="nav">
     <a class="brand" href="index.html" aria-label="HexLogic home">
       <img class="brand-mark" src="assets/hexlogic-mark.svg" alt="">
@@ -28,22 +75,23 @@
         <li><a href="index.html#services">Services</a></li>
         <li><a href="index.html#work">Work</a></li>
         <li><a href="blog.html">Research</a></li>
-        <li><a href="index.html#reports">Reports</a></li>
+        <li><a href="reports.html">Reports</a></li>
         <li><a href="trust.html">Trust</a></li>
       </ul>
-      <button class="icon-btn" data-theme-toggle title="Toggle theme" aria-label="Toggle theme"><i data-theme-icon class="fas fa-sun"></i></button>
+      <button class="icon-btn" data-theme-toggle title="Toggle theme" aria-label="Toggle theme"><i data-theme-icon class="fas fa-sun" aria-hidden="true"></i></button>
       <a class="btn btn-primary btn-sm desktop-cta" href="contact.html">Contact us</a>
-      <button class="icon-btn hamburger" data-menu-toggle aria-label="Menu"><i class="fas fa-bars"></i></button>
+      <button class="icon-btn hamburger" data-menu-toggle aria-label="Menu"><i class="fas fa-bars" aria-hidden="true"></i></button>
     </div>
   </nav>
   <div class="mobile-menu">
     <a href="index.html#services">Services</a>
     <a href="index.html#work">Work</a>
     <a href="blog.html">Research</a>
-    <a href="index.html#reports">Reports</a>
+    <a href="reports.html">Reports</a>
     <a href="trust.html">Trust</a>
     <a href="contact.html">Contact us</a>
   </div>
+  <a id="main" tabindex="-1"></a>
   <header class="page-hero grid-bg">
     <div class="glow"></div>
     <div class="inner reveal in">
@@ -52,7 +100,7 @@
       <h1>Network Penetration Testing</h1>
       <p class="lead">Internal and external network assessments and assumed-breach red teaming &mdash; from perimeter exposure to full Active Directory compromise and lateral movement.</p>
       <div class="hero-cta" style="margin-top:30px">
-        <a class="btn btn-primary btn-lg" href="contact.html">Request this assessment <i class="fas fa-arrow-right"></i></a>
+        <a class="btn btn-primary btn-lg" href="contact.html">Request this assessment <i class="fas fa-arrow-right" aria-hidden="true"></i></a>
         <a class="btn btn-secondary btn-lg" href="assets/report/network.pdf" target="_blank" rel="noopener">View sample report</a>
       </div>
     </div>
@@ -65,12 +113,33 @@
         <p>A focused, manual engagement across the full network attack surface.</p>
       </div>
       <div class="feature-list">
-        <div class="feature reveal"><i class="fas fa-tower-broadcast"></i><div><h4>External perimeter</h4><p>Exposed services, weak edge configs and internet-facing attack paths.</p></div></div>
-        <div class="feature reveal"><i class="fas fa-sitemap"></i><div><h4>Active Directory</h4><p>Kerberoasting, ACL abuse, delegation and privilege-escalation chains.</p></div></div>
-        <div class="feature reveal"><i class="fas fa-arrows-left-right"></i><div><h4>Lateral movement</h4><p>Pivoting, credential harvesting and path-to-domain-admin mapping.</p></div></div>
-        <div class="feature reveal"><i class="fas fa-user-shield"></i><div><h4>Assumed breach</h4><p>What an attacker achieves once inside &mdash; realistically, end to end.</p></div></div>
-        <div class="feature reveal"><i class="fas fa-network-wired"></i><div><h4>Segmentation</h4><p>Validating that network zones actually contain a breach.</p></div></div>
-        <div class="feature reveal"><i class="fas fa-key"></i><div><h4>Credential hygiene</h4><p>Reused, weak and cleartext credentials across the estate.</p></div></div>
+        <div class="feature reveal"><i class="fas fa-tower-broadcast" aria-hidden="true"></i><div><h4>External perimeter</h4><p>Exposed services, weak edge configs and internet-facing attack paths.</p></div></div>
+        <div class="feature reveal"><i class="fas fa-sitemap" aria-hidden="true"></i><div><h4>Active Directory</h4><p>Kerberoasting, ACL abuse, delegation and privilege-escalation chains.</p></div></div>
+        <div class="feature reveal"><i class="fas fa-arrows-left-right" aria-hidden="true"></i><div><h4>Lateral movement</h4><p>Pivoting, credential harvesting and path-to-domain-admin mapping.</p></div></div>
+        <div class="feature reveal"><i class="fas fa-user-shield" aria-hidden="true"></i><div><h4>Assumed breach</h4><p>What an attacker achieves once inside &mdash; realistically, end to end.</p></div></div>
+        <div class="feature reveal"><i class="fas fa-network-wired" aria-hidden="true"></i><div><h4>Segmentation</h4><p>Validating that network zones actually contain a breach.</p></div></div>
+        <div class="feature reveal"><i class="fas fa-key" aria-hidden="true"></i><div><h4>Credential hygiene</h4><p>Reused, weak and cleartext credentials across the estate.</p></div></div>
+      </div>
+    </div>
+  </section>
+  <section class="section">
+    <div class="container">
+      <div class="section-head left reveal" style="max-width:720px">
+        <div class="eyebrow">Coverage</div>
+        <h2>Mapped to MITRE ATT&amp;CK</h2>
+        <p>OWASP does not publish a network Top 10, so infrastructure findings are mapped to MITRE ATT&amp;CK tactics &mdash; the industry standard for network and host attack techniques.</p>
+      </div>
+      <div class="owasp">
+        <div class="owasp-item reveal"><span class="code">TA0043</span><div><h4>Reconnaissance</h4><p>Gathering information to plan the intrusion.</p></div></div>
+        <div class="owasp-item reveal"><span class="code">TA0001</span><div><h4>Initial Access</h4><p>Gaining the first foothold in the network.</p></div></div>
+        <div class="owasp-item reveal"><span class="code">TA0002</span><div><h4>Execution</h4><p>Running attacker-controlled code on a host.</p></div></div>
+        <div class="owasp-item reveal"><span class="code">TA0003</span><div><h4>Persistence</h4><p>Maintaining access across reboots and changes.</p></div></div>
+        <div class="owasp-item reveal"><span class="code">TA0004</span><div><h4>Privilege Escalation</h4><p>Gaining higher-level permissions on a system.</p></div></div>
+        <div class="owasp-item reveal"><span class="code">TA0006</span><div><h4>Credential Access</h4><p>Stealing account names, hashes and secrets.</p></div></div>
+        <div class="owasp-item reveal"><span class="code">TA0007</span><div><h4>Discovery</h4><p>Mapping the environment from the inside.</p></div></div>
+        <div class="owasp-item reveal"><span class="code">TA0008</span><div><h4>Lateral Movement</h4><p>Pivoting between systems across the network.</p></div></div>
+        <div class="owasp-item reveal"><span class="code">TA0009</span><div><h4>Collection</h4><p>Gathering data of interest to the objective.</p></div></div>
+        <div class="owasp-item reveal"><span class="code">TA0010</span><div><h4>Exfiltration</h4><p>Moving stolen data out of the network.</p></div></div>
       </div>
     </div>
   </section>
@@ -97,8 +166,8 @@
           <p>Senior, certified engineers. Fixed-price scope. Report your team can act on.</p>
         </div>
         <div style="display:flex;gap:12px;flex-wrap:wrap">
-          <a class="btn btn-primary btn-lg" href="contact.html">Request an assessment <i class="fas fa-arrow-right"></i></a>
-          <a class="btn btn-secondary btn-lg" href="https://cal.com/hexlogic" target="_blank" rel="noopener"><i class="fas fa-calendar-check"></i> Book a call</a>
+          <a class="btn btn-primary btn-lg" href="contact.html">Request an assessment <i class="fas fa-arrow-right" aria-hidden="true"></i></a>
+          <a class="btn btn-secondary btn-lg" href="https://cal.com/hexlogic" target="_blank" rel="noopener"><i class="fas fa-calendar-check" aria-hidden="true"></i> Book a call</a>
         </div>
       </div>
     </div>
@@ -116,8 +185,8 @@
       <div class="footer-col"><h4>Company</h4><ul><li><a href="index.html#work">Case Studies</a></li><li><a href="blog.html">Research</a></li><li><a href="trust.html">Trust Center</a></li><li><a href="contact.html">Contact</a></li></ul></div>
       <div class="footer-col">
         <h4>Secure contact</h4>
-        <p style="margin-bottom:8px"><i class="fas fa-envelope" style="margin-right:8px;color:var(--accent)"></i>security@hexlogic.io</p>
-        <p style="margin-bottom:16px"><i class="fas fa-shield-halved" style="margin-right:8px;color:var(--accent)"></i>PGP available</p>
+        <p style="margin-bottom:8px"><i class="fas fa-envelope" style="margin-right:8px;color:var(--accent)" aria-hidden="true"></i>security@hexlogic.io</p>
+        <p style="margin-bottom:16px"><i class="fas fa-shield-halved" style="margin-right:8px;color:var(--accent)" aria-hidden="true"></i>PGP available</p>
         <span class="badge badge-success"><span class="dot"></span>Response &lt; 24h</span>
       </div>
     </div>
@@ -127,6 +196,6 @@
     </div>
   </footer>
 
-  <script src="js/site.js"></script>
+  <script src="js/site.js" defer></script>
 </body>
 </html>

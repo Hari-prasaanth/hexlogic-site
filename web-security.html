@@ -16,8 +16,55 @@
   <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;500;600;700&family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
   <link rel="stylesheet" href="css/hexlogic.css">
+  <link rel="apple-touch-icon" href="assets/apple-touch-icon.png">
+  <link rel="manifest" href="site.webmanifest">
+  <meta name="theme-color" content="#070A12">
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+        "@type": "Service",
+        "name": "Web Application Penetration Testing",
+        "serviceType": "Penetration testing",
+        "provider": {
+          "@type": "Organization",
+          "name": "HexLogic",
+          "url": "https://hexlogic.io/"
+        },
+        "areaServed": "Global",
+        "description": "We manually test web applications for access control, injection, business-logic, authentication and client-side flaws.",
+        "url": "https://hexlogic.io/web-security.html"
+      },
+      {
+        "@type": "BreadcrumbList",
+        "itemListElement": [
+          {
+            "@type": "ListItem",
+            "position": 1,
+            "name": "Home",
+            "item": "https://hexlogic.io/"
+          },
+          {
+            "@type": "ListItem",
+            "position": 2,
+            "name": "Services",
+            "item": "https://hexlogic.io/#services"
+          },
+          {
+            "@type": "ListItem",
+            "position": 3,
+            "name": "Web Application Penetration Testing",
+            "item": "https://hexlogic.io/web-security.html"
+          }
+        ]
+      }
+    ]
+  }
+  </script>
 </head>
 <body>
+  <a class="skip" href="#main">Skip to content</a>
   <nav class="nav">
     <a class="brand" href="index.html" aria-label="HexLogic home">
       <img class="brand-mark" src="assets/hexlogic-mark.svg" alt="">
@@ -28,22 +75,23 @@
         <li><a href="index.html#services">Services</a></li>
         <li><a href="index.html#work">Work</a></li>
         <li><a href="blog.html">Research</a></li>
-        <li><a href="index.html#reports">Reports</a></li>
+        <li><a href="reports.html">Reports</a></li>
         <li><a href="trust.html">Trust</a></li>
       </ul>
-      <button class="icon-btn" data-theme-toggle title="Toggle theme" aria-label="Toggle theme"><i data-theme-icon class="fas fa-sun"></i></button>
+      <button class="icon-btn" data-theme-toggle title="Toggle theme" aria-label="Toggle theme"><i data-theme-icon class="fas fa-sun" aria-hidden="true"></i></button>
       <a class="btn btn-primary btn-sm desktop-cta" href="contact.html">Contact us</a>
-      <button class="icon-btn hamburger" data-menu-toggle aria-label="Menu"><i class="fas fa-bars"></i></button>
+      <button class="icon-btn hamburger" data-menu-toggle aria-label="Menu"><i class="fas fa-bars" aria-hidden="true"></i></button>
     </div>
   </nav>
   <div class="mobile-menu">
     <a href="index.html#services">Services</a>
     <a href="index.html#work">Work</a>
     <a href="blog.html">Research</a>
-    <a href="index.html#reports">Reports</a>
+    <a href="reports.html">Reports</a>
     <a href="trust.html">Trust</a>
     <a href="contact.html">Contact us</a>
   </div>
+  <a id="main" tabindex="-1"></a>
   <header class="page-hero grid-bg">
     <div class="glow"></div>
     <div class="inner reveal in">
@@ -52,7 +100,7 @@
       <h1>Web Application Penetration Testing</h1>
       <p class="lead">We manually test your web applications the way a determined attacker would &mdash; chaining logic flaws, broken access control and injection into real, demonstrable impact.</p>
       <div class="hero-cta" style="margin-top:30px">
-        <a class="btn btn-primary btn-lg" href="contact.html">Request this assessment <i class="fas fa-arrow-right"></i></a>
+        <a class="btn btn-primary btn-lg" href="contact.html">Request this assessment <i class="fas fa-arrow-right" aria-hidden="true"></i></a>
         <a class="btn btn-secondary btn-lg" href="assets/report/web.pdf" target="_blank" rel="noopener">View sample report</a>
       </div>
     </div>
@@ -65,12 +113,33 @@
         <p>A focused, manual engagement across the full web application attack surface.</p>
       </div>
       <div class="feature-list">
-        <div class="feature reveal"><i class="fas fa-user-lock"></i><div><h4>Broken access control</h4><p>IDOR, privilege escalation and multi-tenant isolation failures across every role.</p></div></div>
-        <div class="feature reveal"><i class="fas fa-syringe"></i><div><h4>Injection</h4><p>SQL, NoSQL, command and template injection &mdash; found and proven, not guessed.</p></div></div>
-        <div class="feature reveal"><i class="fas fa-shuffle"></i><div><h4>Business logic</h4><p>Abuse of workflows, race conditions and price/quantity manipulation scanners can't see.</p></div></div>
-        <div class="feature reveal"><i class="fas fa-key"></i><div><h4>Authentication & session</h4><p>JWT confusion, weak session handling, MFA bypass and password-reset flaws.</p></div></div>
-        <div class="feature reveal"><i class="fas fa-code"></i><div><h4>Client-side</h4><p>Stored/DOM XSS, CSRF, CORS misconfiguration and sensitive data exposure.</p></div></div>
-        <div class="feature reveal"><i class="fas fa-file-shield"></i><div><h4>SSRF & file handling</h4><p>Server-side request forgery, unsafe upload and deserialization issues.</p></div></div>
+        <div class="feature reveal"><i class="fas fa-user-lock" aria-hidden="true"></i><div><h4>Broken access control</h4><p>IDOR, privilege escalation and multi-tenant isolation failures across every role.</p></div></div>
+        <div class="feature reveal"><i class="fas fa-syringe" aria-hidden="true"></i><div><h4>Injection</h4><p>SQL, NoSQL, command and template injection &mdash; found and proven, not guessed.</p></div></div>
+        <div class="feature reveal"><i class="fas fa-shuffle" aria-hidden="true"></i><div><h4>Business logic</h4><p>Abuse of workflows, race conditions and price/quantity manipulation scanners can't see.</p></div></div>
+        <div class="feature reveal"><i class="fas fa-key" aria-hidden="true"></i><div><h4>Authentication & session</h4><p>JWT confusion, weak session handling, MFA bypass and password-reset flaws.</p></div></div>
+        <div class="feature reveal"><i class="fas fa-code" aria-hidden="true"></i><div><h4>Client-side</h4><p>Stored/DOM XSS, CSRF, CORS misconfiguration and sensitive data exposure.</p></div></div>
+        <div class="feature reveal"><i class="fas fa-file-shield" aria-hidden="true"></i><div><h4>SSRF & file handling</h4><p>Server-side request forgery, unsafe upload and deserialization issues.</p></div></div>
+      </div>
+    </div>
+  </section>
+  <section class="section">
+    <div class="container">
+      <div class="section-head left reveal" style="max-width:720px">
+        <div class="eyebrow">Coverage</div>
+        <h2>Mapped to the OWASP Top 10 (2021)</h2>
+        <p>Every finding is categorized against the industry-standard framework, so your risk is legible to engineering, security and leadership alike.</p>
+      </div>
+      <div class="owasp">
+        <div class="owasp-item reveal"><span class="code">A01</span><div><h4>Broken Access Control</h4><p>Enforcement failures that let users act outside their intended permissions.</p></div></div>
+        <div class="owasp-item reveal"><span class="code">A02</span><div><h4>Cryptographic Failures</h4><p>Weak, missing or misused encryption exposing sensitive data.</p></div></div>
+        <div class="owasp-item reveal"><span class="code">A03</span><div><h4>Injection</h4><p>SQL, NoSQL, command and template injection via untrusted input.</p></div></div>
+        <div class="owasp-item reveal"><span class="code">A04</span><div><h4>Insecure Design</h4><p>Missing or flawed security controls at the design level.</p></div></div>
+        <div class="owasp-item reveal"><span class="code">A05</span><div><h4>Security Misconfiguration</h4><p>Insecure defaults, verbose errors and missing hardening.</p></div></div>
+        <div class="owasp-item reveal"><span class="code">A06</span><div><h4>Vulnerable &amp; Outdated Components</h4><p>Known-vulnerable libraries, frameworks and dependencies.</p></div></div>
+        <div class="owasp-item reveal"><span class="code">A07</span><div><h4>Identification &amp; Authentication Failures</h4><p>Weak authentication, session and credential handling.</p></div></div>
+        <div class="owasp-item reveal"><span class="code">A08</span><div><h4>Software &amp; Data Integrity Failures</h4><p>Unverified updates, insecure deserialization and CI/CD risk.</p></div></div>
+        <div class="owasp-item reveal"><span class="code">A09</span><div><h4>Security Logging &amp; Monitoring Failures</h4><p>Insufficient detection, logging and incident response.</p></div></div>
+        <div class="owasp-item reveal"><span class="code">A10</span><div><h4>Server-Side Request Forgery</h4><p>Server coerced into making unintended outbound requests.</p></div></div>
       </div>
     </div>
   </section>
@@ -97,8 +166,8 @@
           <p>Senior, certified engineers. Fixed-price scope. Report your team can act on.</p>
         </div>
         <div style="display:flex;gap:12px;flex-wrap:wrap">
-          <a class="btn btn-primary btn-lg" href="contact.html">Request an assessment <i class="fas fa-arrow-right"></i></a>
-          <a class="btn btn-secondary btn-lg" href="https://cal.com/hexlogic" target="_blank" rel="noopener"><i class="fas fa-calendar-check"></i> Book a call</a>
+          <a class="btn btn-primary btn-lg" href="contact.html">Request an assessment <i class="fas fa-arrow-right" aria-hidden="true"></i></a>
+          <a class="btn btn-secondary btn-lg" href="https://cal.com/hexlogic" target="_blank" rel="noopener"><i class="fas fa-calendar-check" aria-hidden="true"></i> Book a call</a>
         </div>
       </div>
     </div>
@@ -116,8 +185,8 @@
       <div class="footer-col"><h4>Company</h4><ul><li><a href="index.html#work">Case Studies</a></li><li><a href="blog.html">Research</a></li><li><a href="trust.html">Trust Center</a></li><li><a href="contact.html">Contact</a></li></ul></div>
       <div class="footer-col">
         <h4>Secure contact</h4>
-        <p style="margin-bottom:8px"><i class="fas fa-envelope" style="margin-right:8px;color:var(--accent)"></i>security@hexlogic.io</p>
-        <p style="margin-bottom:16px"><i class="fas fa-shield-halved" style="margin-right:8px;color:var(--accent)"></i>PGP available</p>
+        <p style="margin-bottom:8px"><i class="fas fa-envelope" style="margin-right:8px;color:var(--accent)" aria-hidden="true"></i>security@hexlogic.io</p>
+        <p style="margin-bottom:16px"><i class="fas fa-shield-halved" style="margin-right:8px;color:var(--accent)" aria-hidden="true"></i>PGP available</p>
         <span class="badge badge-success"><span class="dot"></span>Response &lt; 24h</span>
       </div>
     </div>
@@ -127,6 +196,6 @@
     </div>
   </footer>
 
-  <script src="js/site.js"></script>
+  <script src="js/site.js" defer></script>
 </body>
 </html>
