@@ -1,6 +1,8 @@
 /* HexLogic — site interactions (vanilla, no deps) */
 (function () {
   var root = document.documentElement;
+  // Contact backend (Google Apps Script web-app /exec URL). Paste your deployed URL here:
+  var CONTACT_ENDPOINT = 'https://script.google.com/macros/s/AKfycbyEN-42_-CnODHqQuiSrLRliX8Rl-aPArEirUlaPyootCIMtJdtnyWNUaPFbr8rICEN/exec';
   var reduce = window.matchMedia && window.matchMedia('(prefers-reduced-motion: reduce)').matches;
 
   /* ---- Theme (persisted) ---- */
@@ -178,11 +180,7 @@
       var btn = mform.querySelector('button[type="submit"]');
       var orig = btn ? btn.innerHTML : '';
       if (btn) { btn.disabled = true; btn.innerHTML = 'Sending…'; }
-      fetch(mform.action, {
-        method: 'POST',
-        body: new FormData(mform),
-        headers: { 'Accept': 'application/json' }
-      }).then(function (r) { return r.json().catch(function () { return {}; }); })
+      fetch(CONTACT_ENDPOINT, { method: 'POST', mode: 'no-cors', body: new URLSearchParams(new FormData(mform)) })
         .then(function () { showSuccess(); })
         .catch(function () { showSuccess(); })
         .finally(function () { if (btn) { btn.disabled = false; btn.innerHTML = orig; } });
@@ -195,6 +193,17 @@
     if (ok) ok.style.display = 'block';
   }
   document.addEventListener('keydown', function (e) { if (e.key === 'Escape') closeModal(); });
+
+  /* ---- Contact page form (posts to Apps Script) ---- */
+  var cform = document.querySelector('[data-contact-form]');
+  if (cform) cform.addEventListener('submit', function (e) {
+    e.preventDefault();
+    var btn = cform.querySelector('button[type="submit"]'); var orig = btn ? btn.innerHTML : '';
+    if (btn) { btn.disabled = true; btn.innerHTML = 'Sending\u2026'; }
+    fetch(CONTACT_ENDPOINT, { method: 'POST', mode: 'no-cors', body: new URLSearchParams(new FormData(cform)) })
+      .then(function () { window.location.href = 'thanks.html'; })
+      .catch(function () { window.location.href = 'thanks.html'; });
+  });
 
   /* ---- Year ---- */
   document.querySelectorAll('[data-year]').forEach(function (el) { el.textContent = new Date().getFullYear(); });
